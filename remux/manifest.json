@@ -1,0 +1,39 @@
+{
+  "name": "remux",
+  "title": "AutoRemux",
+  "author": "meyu",
+  "description": "自动对Bluray电影制作remux",
+  "_comment_start": "x-release-please-start-version",
+  "version": "1.1.1",
+  "_comment_end": "x-release-please-end",
+  "requirements": ["bitstring", "psutil"],
+  "githubUrl": "/api/plugins/remux",
+  "helpDocUrl": "/api/plugins/remux",
+  "dependencies": {
+    "appVersion": ">1.9.55"
+  },
+  "configField": [
+      {
+        "fieldName": "outpath",
+        "fieldType": "String",
+        "label": "remux文件的保存路径",
+        "helperText": "remux文件的保存路径",
+        "defaultValue": ""
+      },
+      {
+        "fieldName": "simple_mode",
+        "fieldType": "Bool",
+        "label": "是否开启精简模式",
+        "helperText": "精简模式单语言只保留一条音轨，中文字幕最多保留4条",
+        "defaultValue": true
+      },
+      {
+        "fieldName": "dv_enable",
+        "fieldType": "Bool",
+        "label": "是否保留杜比视界Dolby Vision",
+        "helperText": "不勾选则不保留杜比效果，可大幅加快杜比电影的制作速度",
+        "defaultValue": true
+      }
+  ],
+  "logoUrl": "/plugins/plugins/logo.jpg"
+}
