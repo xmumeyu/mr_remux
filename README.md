@@ -11,10 +11,11 @@
 		rm /usr/lib/x86_64-linux-gnu/libstdc++.so.6 
 		ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28 /usr/lib/x86_64-linux-gnu/libstdc++.so.6 
 	
+	2、/remux 目录是插件本体，复制到mr plugins目录下，重启mr
 
-	2、如果模块未自动安装成功，则需手动安装 pip install  "bitstring", "psutil"
+	3、如果模块未自动安装成功，则需手动安装 pip install  "bitstring", "psutil"
 
-	3、插件设置里设定remux保存目录
+	4、插件设置里设定remux保存目录
 
 
 手动制作remux（可用于测试）
